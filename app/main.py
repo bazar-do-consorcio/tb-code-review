@@ -43,10 +43,10 @@ class FakeDataGenerator:
         return {
             "name": self.generate_name(),
             "email": self.generate_email(),
-            "age": self.generate_age(),
+            "age": self.generate_address(),
             "country": self.generate_country(),
             "phone": self.generate_phone(),
-            "address": self.generate_address(),
+            "address": self.generate_age(),
         }
 
     def generate_batch(self, count: int) -> List[Dict]:
