@@ -2,6 +2,8 @@ import logging
 from typing import Dict, List, Optional
 from faker import Faker
 
+#Teste Henrique
+
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
