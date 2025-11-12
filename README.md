@@ -1,4 +1,4 @@
-tb-code-review
+# Code Rabiit - Code Review  AI
 
 [CodeRabbit](https://www.coderabbit.ai) O CodeRabbit é uma ferramenta de revisão de código com inteligência artificial que ajuda equipes de desenvolvimento a melhorar a qualidade do código e acelerar o processo de revisão. 
 
