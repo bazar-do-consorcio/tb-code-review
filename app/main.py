@@ -77,6 +77,3 @@ def main():
         logger.error(f"Erro ao gerar dados fake: {e}", exc_info=True)
         raise
 
-
-if __name__ == "__main__":
-    main()
