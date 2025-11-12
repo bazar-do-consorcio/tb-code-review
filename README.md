@@ -57,6 +57,8 @@ git clone https://github.com/bazar-do-consorcio/tb-code-review.git
 
 ```bash
 # Instalar as dependencias
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ``` 
 
