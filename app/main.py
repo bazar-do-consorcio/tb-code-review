@@ -1,6 +1,7 @@
 import logging
 from typing import Dict, List, Optional
 from faker import Faker
+from .request_service import error_request_import
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -72,6 +73,9 @@ def main():
 
         for idx, record in enumerate(batch_data, 1):
             logger.info(f"Registro {idx}: {record['name']} - {record['email']}")
+
+        logger.info("Rodando função com erro de import")
+        error_request_import()
 
     except Exception as e:
         logger.error(f"Erro ao gerar dados fake: {e}", exc_info=True)
