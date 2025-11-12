@@ -1,6 +1,12 @@
-# Code Rabiit - Code Review  AI
+# Code Rabbit - Code Review  AI
 
-[CodeRabbit](https://www.coderabbit.ai) O CodeRabbit é uma ferramenta de revisão de código com inteligência artificial que ajuda equipes de desenvolvimento a melhorar a qualidade do código e acelerar o processo de revisão. 
+[CodeRabbit](https://www.coderabbit.ai) é uma ferramenta de revisão de código com inteligência artificial que ajuda equipes de desenvolvimento a melhorar a qualidade do código e acelerar o processo de revisão.
+
+As análise de códgio pode ser feita de 3 maneiras:
+
+- [PR](https://docs.coderabbit.ai/guides/code-review-overview) - Pull Request nas plataformas de versionamento
+- [IDE](https://docs.coderabbit.ai/code-editors) - Já podemos instalar no Cursor
+- [CLI](https://docs.coderabbit.ai/cli/overview) - Revisões por linha de comando
 
 ## Official Resources
 
@@ -20,7 +26,55 @@
 
 - [OpenAPI Documentation](https://api.coderabbit.ai/api/swagger/) - Documentação Swagger para os endpoints da API REST do CodeRabbit.
 
-## Configuration Examples
+
+## Repository Structure
+```css
+tb-code-review/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+├── requirements.txt
+├── README.md
+```
+
+## Hands-on: Testing the CodeRabbit
+
+### Passo 1: Abra o seu PR Após fazer o push da sua branch, abra um Pull Request para a branch principal (main ou develop) no repositório. Ao abrir o PR, o CodeRabbit começará automaticamente a análise do código e fornecerá sugestões de melhoria diretamente na interface do GitHub.
+
+### Passo 2: Verifique os Comentários do CodeRabbit Enquanto o CodeRabbit revisa o código, ele irá fornecer feedback , sugerindo mudanças e identificando possíveis problemas de qualidade, segurança ou boas práticas de programação.
+
+### Passo 3: Analise as sugestões nos comentários do CodeRabbit. Isso pode incluir ajustes no formato, segurança, ou otimizações.
+
+### Passo 4: Finalize o PR Após realizar as correções e garantir que o CodeRabbit não tenha mais nenhum feedback, finalize o PR e o código será revisado e aprovado, pronto para ser mesclado à branch principal.
+
+
+## Setup and Run
+Clonando o Repositorio
+```bash
+# Clonando o Repositorio
+git clone https://github.com/bazar-do-consorcio/tb-code-review.git
+```
+
+```bash
+# Instalar as dependencias
+pip install -r requirements.txt
+``` 
+
+```bash
+# Execute o app
+python app/main.py
+``` 
+
+## Contribution Flow
+
+```bash
+# Criando sua branch
+git checkout -b nome-da-branch
+```
+
+
+
+## Configuration Example
 
 ```yaml
 # yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
